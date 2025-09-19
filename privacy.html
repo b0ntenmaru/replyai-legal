@@ -1,53 +1,79 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-  />
-  <title>プライバシーポリシー</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; line-height: 1.7; }
-    h1 { font-size: 22px; margin-bottom: 8px; }
-    h2 { font-size: 18px; margin-top: 20px; }
-    p, li { font-size: 15px; }
-    .updated { color: #666; font-size: 13px; margin-bottom: 16px; }
-  </style>
-  <meta name="color-scheme" content="light dark" />
-  <style>
-    @media (prefers-color-scheme: dark) {
-      body { background: #0b0b0b; color: #f3f3f3; }
-      .updated { color: #aaa; }
-    }
-  </style>
-  <base target="_blank" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="referrer" content="no-referrer" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data:; img-src 'self' data:; style-src 'self' 'unsafe-inline';" />
-  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>プライバシーポリシー — ReplAI</title>
+
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Noto Sans", Helvetica, Arial, sans-serif; 
+         line-height: 1.75; max-width: 860px; margin: 40px auto; padding: 0 16px; }
+  h1, h2, h3 { line-height: 1.3; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+  header { margin-bottom: 24px; }
+  .meta { color: #666; font-size: 0.95rem; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 0.95rem; }
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 1.2em; }
+</style>
+
 </head>
 <body>
+<header>
   <h1>プライバシーポリシー</h1>
-  <div class="updated">最終更新日: 2025-09-02</div>
-  <p>本アプリ（以下「本サービス」）における個人情報の取扱いについて定めます。</p>
-  <h2>1. 取得する情報</h2>
-  <ul>
-    <li>アカウント識別子（Firebase UID 等）</li>
-    <li>端末情報・操作ログ</li>
-    <li>決済情報（サブスク状態等。カード番号は保持しません）</li>
-    <li>返信生成のための入力（テキスト／スクリーンショット）</li>
-  </ul>
-  <h2>2. 利用目的</h2>
-  <p>本サービス提供、品質改善、不正防止、問い合わせ対応、法令遵守のために利用します。</p>
-  <h2>3. 外部送信</h2>
-  <p>OpenAI（生成）、Google Cloud Vision（OCR）、RevenueCat（課金管理）等へ必要な範囲で送信します。</p>
-  <h2>4. 権利</h2>
-  <p>開示・訂正・削除等のご要望はサポート窓口までご連絡ください。</p>
+  <p class="meta">最終更新日: 2025-09-20</p>
+</header>
+
+<p>本ポリシーは、<strong>ReplAI</strong>（以下「本アプリ」）におけるユーザー情報の取扱いを定めるものです。運営者は<strong>伊達 大晃（だて ひろあき）</strong>（個人。以下「当方」）です。お問い合わせは <a href="mailto:d4te74@gmail.com">d4te74@gmail.com</a> までお願いします。</p>
+
+<h2>1. 収集する情報</h2>
+<ul>
+  <li><strong>ユーザーコンテンツ</strong>：ユーザーが本アプリにアップロードする画像（スクリーンショット等）および入力テキスト</li>
+  <li><strong>識別子</strong>：Firebase Authentication により割り当てられるユーザーID（UID）</li>
+  <li><strong>技術情報・診断</strong>：クラッシュログ、パフォーマンス計測、アクセスログ等（個人が特定されない形での統計を含む）</li>
+</ul>
+
+<h2>2. 利用目的</h2>
+<ul>
+  <li>返信文の生成（OCR・テキスト生成等）を含む本アプリの主要機能の提供</li>
+  <li>品質向上のための不具合解析・利用状況の把握</li>
+  <li>不正利用の防止、セキュリティ向上</li>
+</ul>
+
+<h2>3. 第三者サービスの利用</h2>
+<p>本アプリは以下のサービスを利用します（機能提供のために必要な範囲で情報が処理されます）。</p>
+<ul>
+  <li><strong>OpenAI</strong>：テキスト生成</li>
+  <li><strong>Google Cloud Vision API</strong>：画像の文字認識（OCR）</li>
+  <li><strong>Firebase（Google LLC）</strong>：認証、ログ基盤 等</li>
+</ul>
+<p>これらの事業者のサーバは国外に所在する場合があります。</p>
+
+<h2>4. 保存期間</h2>
+<ul>
+  <li><strong>セッション/返信データ</strong>：ユーザーが削除するまで、または当方ポリシーに基づく期間</li>
+  <li><strong>画像データ</strong>：生成処理に必要な範囲での一時利用とし、<u>恒久保存しない方針</u>（将来仕様変更時は本ページで告知）</li>
+</ul>
+
+<h2>5. 利用者の権利</h2>
+<ul>
+  <li>アプリ内の「アカウント削除」から、UID に紐づくデータの削除を申請できます。</li>
+  <li><a href="mailto:d4te74@gmail.com">d4te74@gmail.com</a> にて、開示・訂正・削除等の請求を受け付けます。</li>
+</ul>
+
+<h2>6. 未成年の利用</h2>
+<p>未成年者は、保護者の同意を得た上でご利用ください。</p>
+
+<h2>7. ポリシーの変更</h2>
+<p>法令改正や機能追加に応じて本ポリシーを変更する場合があります。重要な変更は本ページで告知します。</p>
+
+<footer>
+  <h2>8. 連絡先</h2>
+  <p>運営者（個人）：伊達 大晃（だて ひろあき）<br/>
+  メール：<a href="mailto:d4te74@gmail.com">d4te74@gmail.com</a></p>
+  <p><a href="./terms.html">利用規約</a> / <a href="./support.html">サポート</a></p>
+</footer>
 </body>
 </html>
-
